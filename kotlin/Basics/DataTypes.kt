@@ -13,8 +13,7 @@ fun main() {
     println("Count: $count")
 
     var department: String?
-    department = null
     department = "Software Engineering"
-    print("Department ${department!!}")
+    print("Department ${department}")
 
 }
