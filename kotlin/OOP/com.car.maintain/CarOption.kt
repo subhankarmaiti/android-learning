@@ -1,4 +1,11 @@
 package com.car.maintain
+/**
+ * 3 access modifier
+ * 1 - open
+ * 2 - protected
+ * 3 - private
+ */
+
 open class CarOption {
     var type:String?=null
     var model:Int?= null
