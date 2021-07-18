@@ -25,7 +25,7 @@ open class CarOption {
         this.price = price
         this.milesDrive = milesDrive
     }
-    fun getCarPrice():Double {
+    open fun getCarPrice():Double {
         val priceTotal = this.price!! - (this.milesDrive!!.toDouble()*10)
         return priceTotal
     }
