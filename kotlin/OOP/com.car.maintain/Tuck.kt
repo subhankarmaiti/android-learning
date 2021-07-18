@@ -14,7 +14,10 @@ class Truck:CarOption {
         return priceTotal
     }
 }
-
+// Extension
+fun Truck.getPrice():Double {
+    return this.price //call to super not supported inside extension
+}
 
 fun main() {
     val truck1 = Truck("BMW",2015,10000.0,105,"Subhankar","Dump")
