@@ -9,7 +9,7 @@ class Truck:CarOption {
     constructor(type:String, model:Int, price:Double, milesDrive:Int, subType: String):super(type, model, price, milesDrive) {
         this.subType = subType
     }
-    fun getCarPrice():Double { //Override
+    override fun getCarPrice():Double { //Override
         val priceTotal = this.price!! - (this.milesDrive!!.toDouble()*20)
         return priceTotal
     }
