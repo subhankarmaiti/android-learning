@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/edDOB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
@@ -23,24 +23,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvShowAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:text="Age Shows here"
         android:textColor="@color/purple_500"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        app:layout_constraintEnd_toEndOf="@+id/edDOB"
+        app:layout_constraintTop_toBottomOf="@+id/edDOB" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="138dp"
         android:layout_marginBottom="185dp"
         android:text="Get My Age"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/tvShowAge"
+        app:layout_constraintTop_toBottomOf="@+id/tvShowAge" />
 </androidx.constraintlayout.widget.ConstraintLayout>
