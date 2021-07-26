@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etShowNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="textPersonName"
+        android:paddingTop="20pt"
+        android:text="0"
+        android:textColor="@android:color/background_light"
+        android:textSize="60sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_marginBottom="1pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buClean"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buCleanEvent"
+                android:text="AC"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/buPlsMinus"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="+/-"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buPercent"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buPercentEvent"
+                android:text="%"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buDiv"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/buOp"
+                android:onClick="buOpEvent"
+                android:text="/"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="1pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/bu7"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/bu8"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/bu9"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buMul"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/buOp"
+                android:onClick="buOpEvent"
+                android:text="*"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="1pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/bu4"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/bu5"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/bu6"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buSub"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/buOp"
+                android:onClick="buOpEvent"
+                android:text="-"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="1pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/bu1"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/bu2"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginRight="1pt"
+                android:id="@+id/bu3"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/whiteBack"
+                android:onClick="buNumbersEvent"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buSum"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/buOp"
+                android:onClick="buOpEvent"
+                android:text="+"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginRight="1pt"
+            android:id="@+id/bu0"
+            android:layout_width="80pt"
+            android:layout_height="40pt"
+            android:layout_weight="2"
+            android:background="@color/whiteBack"
+            android:onClick="buNumbersEvent"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginRight="1pt"
+            android:id="@+id/buDot"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_weight="1"
+            android:background="@color/whiteBack"
+            android:onClick="buNumbersEvent"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buEqual"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_weight="1"
+            android:background="@color/buOp"
+            android:onClick="buEqualEvent"
+            android:text="="
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>
